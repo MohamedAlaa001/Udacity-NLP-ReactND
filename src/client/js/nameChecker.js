@@ -1,4 +1,4 @@
-function checkForName(inputText) {
+export default function checkForName(inputText) {
   console.log('::: Running checkForName :::', inputText);
   let names = ['Picard', 'Janeway', 'Kirk', 'Archer', 'Georgiou'];
 
@@ -7,4 +7,4 @@ function checkForName(inputText) {
   }
 }
 
-export { checkForName };
+// export { checkForName };
