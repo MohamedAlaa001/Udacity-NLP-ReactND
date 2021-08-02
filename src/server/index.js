@@ -4,14 +4,6 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-console.log(`API Key = ${process.env.API_KEY}`);
-
-var textapi = {
-  application_key: process.env.API_KEY,
-};
-
-console.log(textapi);
-
 const app = express();
 
 app.use(express.static('dist'));
@@ -21,7 +13,11 @@ app.get('/', function (req, res) {
   // res.sendFile(path.resolve('src/client/views/index.html'));
 });
 
+app.get('/key', function (req, res) {
+  res.send(process.env.API_KEY);
+});
+
 // designates what port the app will listen to for incoming requests
-app.listen(8081, function () {
-  console.log('Example app listening on port 8081!');
+app.listen(8080, function () {
+  console.log('Example app listening on port 8080!');
 });

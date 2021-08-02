@@ -1,8 +1,12 @@
 import handleSubmit from './js/formHandler';
-import checkForName from './js/nameChecker';
+import getKey from './js/getKey';
+import updateUI from './js/updateUI';
+import getPolarity from './js/getPolarity';
 
-import './styles/styles.scss';
+import './styles/resets.scss';
+import './styles/footer.scss';
+import './styles/form.scss';
+import './styles/header.scss';
+import './styles/base.scss';
 
-console.log('I Exist');
-
-export { handleSubmit, checkForName };
+export { handleSubmit, getKey, updateUI, getPolarity };

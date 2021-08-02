@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 2;
+}
+
+section {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.form-results {
+  div {
+    margin: 0.75rem 0;
+    div {
+      border: 1px solid black;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      font-size: 1.25rem;
+
+      strong {
+        text-transform: capitalize;
+        font-size: 1rem;
+      }
+    }
+  }
+}
