@@ -1,4 +1,4 @@
-const getPolarity = (score_tag) => {
+const getPolarity = async (score_tag) => {
   switch (score_tag) {
     case 'P+':
       return 'Strong Positive';

@@ -4,7 +4,7 @@ const getKey = async () => {
 
     return await res.text();
   } catch (err) {
-    console.log(`Error: ${err}`);
+    throw err;
   }
 };
 

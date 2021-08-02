@@ -1,4 +1,4 @@
-const updateUI = ({
+const updateUI = async ({
   agreement,
   subjectivity,
   confidence,
@@ -21,7 +21,7 @@ const updateUI = ({
     'irony'
   ).innerHTML = `<div>Irony: <strong>${irony.toLowerCase()}</strong></div>`;
 
-  const polarity = Client.getPolarity(score_tag);
+  const polarity = await Client.getPolarity(score_tag);
   document.getElementById(
     'polarity'
   ).innerHTML = `<div>Polarity: <strong>${polarity.toLowerCase()}</strong></div>`;
