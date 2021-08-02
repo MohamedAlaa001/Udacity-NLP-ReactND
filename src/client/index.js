@@ -1,7 +1,8 @@
-import { clickMe } from './js/test';
+import { handleSubmit } from './js/formHandler';
+import { checkForName } from './js/nameChecker';
 
 import './styles/styles.scss';
 
-alert('I Exist');
+console.log('I Exist');
 
-export { clickMe };
+export { handleSubmit, checkForName };
